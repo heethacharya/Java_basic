@@ -1,6 +1,7 @@
 package training;
+import homework.Home1;// This is example of Importing another package
 
-import java.sql.SQLOutput;
+
 
 public class Java_basic {
 
@@ -10,9 +11,14 @@ public class Java_basic {
 
     public static void main(String args[])throws Exception{
         Java_basic obj = new Java_basic(); // this is creating object of class(it is blueprint of the class)
+        Home1 Home1= new Home1(); // This is example of calling class from another package and creating obj of it
 
         obj.add(10,10);
         System.out.println(obj.roll);
+
+
+        System.out.println(Home1.stringConcat("Python"));// Here we are passing value for variable
+        System.out.println(Home1.name("Welcome to"));// Here we are passing value for variable
 
     }
 
