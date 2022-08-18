@@ -1,5 +1,6 @@
 package training;
-import homework.Home1;// This is example of Importing another package
+import homework.*;// This is example of Importing another package and all multiple classes inside the package
+
 
 
 
@@ -19,7 +20,9 @@ public class Java_basic {
 
         System.out.println(Home1.stringConcat("Python"));// Here we are passing value for variable
         System.out.println(Home1.name("Welcome to"));// Here we are passing value for variable
-
+        System.out.println(Home1.addWithThreeParam("The addition is",10,20,"30"));// Here we are passing value for variable and it is example of Type Casting
+      Java_loop loop = new Java_loop();
+      loop.ifElseLearning();
     }
 
 
@@ -40,6 +43,14 @@ public class Java_basic {
 
         //System.out.println(name_add);
         System.out.println(newName);
+
+    }
+//Below Method is example of Method overloading where method name is same as above but the parameter is different
+    public void add(int a,int b,int c){
+        String name_add = "Hetal"; // This is string type method level variable
+        int sum = a+b;
+
+        System.out.println(sum);
 
     }
 }
